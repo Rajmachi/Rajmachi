@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajmachi Cab Booking</title>
+  <link rel="stylesheet" href="cab.css" />
+</head>
+<body>
+
+  <!-- Back to Home Button -->
+  <div class="back-to-home">
+    <a href="index.htm">← Back to Home</a>
+  </div>
+
+  <header class="cab-header">
+    <h1>🚖 Book Your Ride to Rajmachi Campsite</h1>
+    <p>From Lonavala or nearby locations, get a hassle-free cab ride directly to your tent.</p>
+  </header>
+
+  <section class="cab-details">
+    <h2>📍 Pickup Points</h2>
+    <ul>
+      <li>Lonavala Railway Station</li>
+      <!-- <li>Kumar Resort Parking</li>
+      <li>Bhushi Dam Parking</li> -->
+    </ul>
+
+    <h2>💰 Fare Details (One-way)</h2>
+    <table>
+      <tr><th>Pickup</th><th>To Rajmachi</th><th>Approx Fare</th></tr>
+      <tr><td>Lonavala Station</td><td>Rajmachi Campsite</td><td>₹3000</td></tr>
+      <!-- <tr><td>Bhushi Dam</td><td>Rajmachi Campsite</td><td>₹650</td></tr> -->
+    </table>
+  </section>
+
+  <section class="booking-form">
+    <h2>📲 Book via WhatsApp</h2>
+    <form id="cabForm" onsubmit="return sendBookingToWhatsApp()">
+      <input type="text" placeholder="Your Name" required id="name" />
+      <input type="text" placeholder="Pickup Location" required id="pickup" />
+      <input type="text" placeholder="Drop Location" required id="drop" value="Rajmachi Campsite" />
+      <input type="datetime-local" required id="datetime" />
+      <textarea placeholder="Any Note..." id="note"></textarea>
+      <button type="submit">Book Now on WhatsApp</button>
+    </form>
+  </section>
+
+  <section class="route-map">
+    <h2>🗺️ Journey Overview</h2>
+    <p>Pick your location in Lonavala → Get picked up → Ride through scenic ghats → Reach Rajmachi campsite.</p>
+    <img src="bg (13).jpeg" alt="Route to Rajmachi" />
+  </section>
+
+  <!-- Bottom Back Button -->
+  <div class="back-to-home bottom">
+    <a href="index.htm">← Back to Home</a>
+  </div>
+
+  <script src="cab.js"></script>
+</body>
+</html>

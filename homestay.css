@@ -1,0 +1,359 @@
+.homestay-section {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.homestay-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.homestay-left, .homestay-right {
+  flex: 1 1 500px;
+}
+
+.homestay-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.homestay-right {
+  padding: 30px;
+}
+
+.homestay-price {
+  color: #e63946;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.homestay-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2a9d8f;
+  margin-bottom: 15px;
+}
+
+.homestay-description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.homestay-features {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.homestay-features li {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.homestay-note {
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.homestay-book-btn {
+  display: inline-block;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.homestay-book-btn:hover {
+  background-color: #21867a;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .homestay-container {
+    flex-direction: column;
+  }
+
+  .homestay-right {
+    padding: 20px;
+  }
+
+  .homestay-title {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* map */
+
+.homestay-location-section {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+}
+
+.homestay-location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.homestay-location-info {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homestay-location-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #00796b;
+}
+
+.homestay-location-subtext {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.homestay-location-details p {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.homestay-location-note {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.homestay-location-btn {
+  margin-top: 20px;
+  background: #00796b;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.homestay-location-btn:hover {
+  background: #004d40;
+}
+
+.homestay-map-frame {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.homestay-map-frame iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* 🔥 Perfect Responsive Design */
+@media (max-width: 900px) {
+  .homestay-location-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .homestay-map-frame {
+    min-height: 300px;
+  }
+
+  .homestay-location-heading {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* food */
+.homestay-food-section {
+  background: #fefefe;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+}
+
+.homestay-food-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.homestay-food-text {
+  flex: 1 1 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homestay-food-text h2 {
+  font-size: 2rem;
+  color: #d35400;
+  margin-bottom: 15px;
+}
+
+.homestay-food-intro {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.homestay-food-highlights p {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.homestay-food-points {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.homestay-food-points li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.homestay-food-btn {
+  margin-top: 20px;
+  background: #e67e22;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.homestay-food-btn:hover {
+  background: #d35400;
+}
+
+.homestay-food-image {
+  flex: 1 1 50%;
+  min-height: 350px;
+}
+
+.homestay-food-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 📱 Perfect Mobile Layout */
+@media (max-width: 768px) {
+  .homestay-food-container {
+    flex-direction: column;
+  }
+
+  .homestay-food-text {
+    padding: 30px 20px;
+  }
+
+  .homestay-food-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .homestay-food-image {
+    min-height: 250px;
+  }
+}

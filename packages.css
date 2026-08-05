@@ -1,0 +1,181 @@
+.camping-package {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #f1fdf7, #e0f7fa);
+}
+
+.package-card {
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.package-title {
+  font-size: 24px;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.package-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.package-price {
+  font-size: 32px;
+  color: #d84315;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.package-price span {
+  font-size: 16px;
+  color: #777;
+}
+
+.package-features {
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #333;
+}
+
+.package-features li {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.book-now-btn {
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.book-now-btn:hover {
+  background: #1b5e20;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .package-card {
+    padding: 20px;
+  }
+
+  .package-title {
+    font-size: 20px;
+  }
+
+  .package-price {
+    font-size: 28px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Blog Section */
+.blog-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.blog-heading {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+  font-weight: bold;
+}
+
+.blog-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-info {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.blog-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2c6e49;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.blog-btn:hover {
+  background: #1f4d33;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-card {
+    flex-direction: column;
+  }
+}

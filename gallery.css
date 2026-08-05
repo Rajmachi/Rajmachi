@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  padding: 20px;
+}
+
+.gallery-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.gallery {
+  column-count: 4;
+  column-gap: 15px;
+}
+
+.gallery-item {
+  margin-bottom: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Fullscreen Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 80px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+}
+
+#caption {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive Columns */
+@media (max-width: 1200px) {
+  .gallery { column-count: 3; }
+}
+@media (max-width: 768px) {
+  .gallery { column-count: 2; }
+}
+@media (max-width: 480px) {
+  .gallery { column-count: 1; }
+}
+
+a{
+    text-decoration: none;
+}
+.back-home {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.back-home:hover {
+  background-color: #e64a19;
+}
+
+.top {
+  position: sticky;
+  top: 10px;
+  z-index: 99;
+}

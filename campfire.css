@@ -1,0 +1,213 @@
+.homestay-campfire-section {
+  background: #fff7f0;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+}
+
+.homestay-campfire-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.homestay-campfire-image {
+  flex: 1 1 50%;
+  min-height: 300px;
+}
+
+.homestay-campfire-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.homestay-campfire-content {
+  flex: 1 1 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homestay-campfire-content h2 {
+  font-size: 2rem;
+  color: #d35400;
+  margin-bottom: 15px;
+}
+
+.homestay-campfire-intro {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.homestay-campfire-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.homestay-campfire-features li {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.homestay-campfire-note {
+  font-size: 0.9rem;
+  background: #fff0e0;
+  padding: 12px;
+  border-left: 4px solid #ffa726;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.homestay-campfire-btn {
+  background: #e67e22;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  width: fit-content;
+}
+
+.homestay-campfire-btn:hover {
+  background: #d35400;
+}
+
+@media (max-width: 768px) {
+  .homestay-campfire-container {
+    flex-direction: column;
+  }
+
+  .homestay-campfire-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .homestay-campfire-image {
+    min-height: 250px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cab */
+.homestay-cab-section {
+  background: #f0f9ff;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+.homestay-cab-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.homestay-cab-image {
+  flex: 1 1 50%;
+  min-height: 300px;
+}
+.homestay-cab-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.homestay-cab-content {
+  flex: 1 1 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.homestay-cab-content h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+.homestay-cab-intro {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+.homestay-cab-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+.homestay-cab-features li {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+.homestay-cab-note {
+  font-size: 0.9rem;
+  background: #e0f7ff;
+  padding: 12px;
+  border-left: 4px solid #00b4d8;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  color: #555;
+}
+.homestay-cab-btn {
+  background: #00b4d8;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  width: fit-content;
+}
+.homestay-cab-btn:hover {
+  background: #0077b6;
+}
+@media (max-width: 768px) {
+  .homestay-cab-container {
+    flex-direction: column;
+  }
+  .homestay-cab-content h2 {
+    font-size: 1.6rem;
+  }
+  .homestay-cab-image {
+    min-height: 250px;
+  }
+}

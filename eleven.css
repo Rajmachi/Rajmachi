@@ -1,0 +1,65 @@
+.contact-section {
+  padding: 50px 20px;
+  background: #f3f4f6;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+  box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.244);
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.contact-btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.call-btn {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+.call-btn:hover {
+  background-color: #2563eb;
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #444;
+}

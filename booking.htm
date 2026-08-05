@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking - Rajmachi Campsite</title>
+  <link rel="stylesheet" href="booking.css" />
+  
+</head>
+<body>
+  <!-- Back to Home Button -->
+  <a href="index.htm" class="back-home">← Back to Home</a>
+
+  <!-- Booking Section -->
+  <section class="booking-section">
+    <h1>Book Your Adventure</h1>
+    <p>Fill in your details and confirm on WhatsApp</p>
+    <form id="bookingForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="number" name="people" placeholder="Number of People" required />
+      <input type="date" name="date" required />
+      <textarea name="message" placeholder="Additional Notes..."></textarea>
+      <button type="submit">Book via WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- Roadmap -->
+  <section class="roadmap">
+    <h2>Booking Journey</h2>
+    <div class="steps">
+      <div class="step">📝 Fill Form</div>
+      <div class="step">✅ Confirm via WhatsApp</div>
+      <div class="step">🚗 Reach Campsite</div>
+      <div class="step">🏕 Enjoy Your Stay</div>
+      <div class="step">💬 Share Feedback</div>
+    </div>
+  </section>
+
+  <!-- Tent Info -->
+  <section class="tent-info">
+    <h2>Available Tents</h2>
+    <div class="tents">
+      <div class="tent-card">
+        <img src="sliderbg (3).jpeg" alt="Classic Tent">
+        <h3>Classic Tent</h3>
+        <p>For 2-3 people, basic comfort, near river view</p>
+      </div>
+      <div class="tent-card">
+        <img src="sliderbg (1).jpeg" alt="Couple Tent">
+        <h3>Couple Tent</h3>
+        <p>Private space, candlelight dinner option</p>
+      </div>
+      <div class="tent-card">
+        <img src="sliderbg (2).jpeg" alt="Family Tent">
+        <h3>Family Tent</h3>
+        <p>Fits 4-6 people, extra safe, bonfire nearby</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Back Button -->
+  <div class="back-bottom">
+    <a href="index.htm" class="back-home">← Back to Home</a>
+  </div>
+
+
+
+  <script src="booking.js"></script>
+</body>
+</html>
