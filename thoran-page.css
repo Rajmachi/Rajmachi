@@ -1,0 +1,394 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* Header Navbar */
+.thoran-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+}
+
+.thoran-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thoran-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.thoran-back-btn:hover {
+    color: #0369a1;
+}
+
+.thoran-brand span {
+    font-weight: 700;
+    font-size: 16px;
+    color: #0f172a;
+}
+
+.thoran-top-whatsapp {
+    background: #25d366;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s;
+}
+
+.thoran-top-whatsapp:hover {
+    background: #20ba5a;
+}
+
+/* Hero Banner */
+.thoran-hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('thoran (5).jpeg') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.thoran-hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.thoran-chip {
+    display: inline-block;
+    background: rgba(2, 132, 199, 0.2);
+    color: #38bdf8;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.thoran-hero h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.thoran-hero p {
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.thoran-hero-meta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 13px;
+    flex-wrap: wrap;
+    color: #e2e8f0;
+}
+
+/* Main Container Grid */
+.thoran-main-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.3fr 0.9fr;
+    gap: 30px;
+}
+
+/* Sections Box Styling */
+.thoran-section-box {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    border: 1px solid #e2e8f0;
+}
+
+.thoran-section-box h2 {
+    font-size: 18px;
+    color: #0f172a;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.thoran-section-box h2 i {
+    color: #0284c7;
+    font-size: 16px;
+}
+
+/* Lists */
+.thoran-check-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.thoran-check-list li {
+    font-size: 13px;
+    color: #475569;
+    position: relative;
+    padding-left: 20px;
+}
+
+.thoran-check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* Card Grid for timing & alert */
+.thoran-card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.thoran-info-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.thoran-info-card i {
+    font-size: 18px;
+    color: #0284c7;
+    margin-top: 2px;
+}
+
+.thoran-info-card h3 {
+    font-size: 14px;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.thoran-info-card p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.alert-card {
+    border-left: 4px solid #dc2626;
+}
+
+.alert-card i {
+    color: #dc2626;
+}
+
+.highlight-text {
+    color: #dc2626 !important;
+    font-weight: 600;
+    font-size: 11px !important;
+}
+
+/* Activities Badges */
+.thoran-badge-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.activity-badge {
+    background: #f1f5f9;
+    color: #334155;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.activity-badge i {
+    color: #0284c7;
+    font-size: 11px;
+}
+
+/* Sidebar Booking Widget */
+.thoran-booking-widget {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.thoran-booking-widget h3 {
+    font-size: 18px;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.thoran-booking-widget p {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 4px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #0284c7;
+}
+
+.thoran-whatsapp-btn {
+    width: 100%;
+    background: #25d366;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.2s;
+    margin-top: 15px;
+}
+
+.thoran-whatsapp-btn:hover {
+    background: #20ba5a;
+}
+
+.direct-call-box {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.direct-call-box a {
+    display: block;
+    color: #0284c7;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+/* Gallery Preview */
+.thoran-gallery-preview {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.thoran-gallery-preview h3 {
+    font-size: 16px;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.thoran-img-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.thoran-img-grid img {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+}
+
+.thoran-img-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Footer */
+.thoran-footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: #94a3b8;
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+    .thoran-main-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .thoran-card-grid {
+        grid-template-columns: 1fr;
+    }
+    .thoran-img-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
