@@ -13,7 +13,7 @@ body {
 }
 
 /* Header Navbar */
-.thoran-header {
+.camp-header {
     background: #ffffff;
     border-bottom: 1px solid #e2e8f0;
     position: sticky;
@@ -22,7 +22,7 @@ body {
     box-shadow: 0 2px 10px rgba(0,0,0,0.03);
 }
 
-.thoran-header-container {
+.camp-header-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 12px 20px;
@@ -31,7 +31,7 @@ body {
     align-items: center;
 }
 
-.thoran-back-btn {
+.camp-back-btn {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -42,17 +42,17 @@ body {
     transition: color 0.2s ease;
 }
 
-.thoran-back-btn:hover {
+.camp-back-btn:hover {
     color: #0369a1;
 }
 
-.thoran-brand span {
+.camp-brand span {
     font-weight: 700;
     font-size: 16px;
     color: #0f172a;
 }
 
-.thoran-top-whatsapp {
+.camp-top-whatsapp {
     background: #25d366;
     color: #fff;
     padding: 6px 14px;
@@ -66,24 +66,24 @@ body {
     transition: background 0.2s;
 }
 
-.thoran-top-whatsapp:hover {
+.camp-top-whatsapp:hover {
     background: #20ba5a;
 }
 
-/* Hero Banner */
-.thoran-hero {
-    background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('thoran (5).jpeg') center/cover no-repeat;
+/* Page Hero */
+.camp-hero {
+    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('thoran (5).jpeg') center/cover no-repeat;
     color: #ffffff;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
-.thoran-hero-content {
+.camp-hero-content {
     max-width: 700px;
     margin: 0 auto;
 }
 
-.thoran-chip {
+.camp-chip {
     display: inline-block;
     background: rgba(2, 132, 199, 0.2);
     color: #38bdf8;
@@ -95,77 +95,114 @@ body {
     border: 1px solid rgba(56, 189, 248, 0.3);
 }
 
-.thoran-hero h1 {
-    font-size: 26px;
+.camp-hero h1 {
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.thoran-hero p {
+.camp-hero p {
     font-size: 14px;
     color: #cbd5e1;
-    margin-bottom: 15px;
 }
 
-.thoran-hero-meta {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    font-size: 13px;
-    flex-wrap: wrap;
-    color: #e2e8f0;
-}
-
-/* Main Container Grid */
-.thoran-main-container {
+/* Main Container Layout */
+.camp-main-container {
     max-width: 1200px;
-    margin: 30px auto;
+    margin: 40px auto;
     padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1.3fr 0.9fr;
-    gap: 30px;
-}
-
-/* Sections Box Styling */
-.thoran-section-box {
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    border: 1px solid #e2e8f0;
-}
-
-.thoran-section-box h2 {
-    font-size: 18px;
-    color: #0f172a;
-    margin-bottom: 15px;
     display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Campsite Card Box */
+.campsite-card-box {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    overflow: hidden;
+    padding: 30px;
+}
+
+.campsite-grid-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 30px;
     align-items: center;
-    gap: 8px;
 }
 
-.thoran-section-box h2 i {
-    color: #0284c7;
-    font-size: 16px;
+/* Info Column */
+.campsite-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
-/* Lists */
-.thoran-check-list {
+.village-tag {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.popular-tag {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.seasonal-tag {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.campsite-info-col h2 {
+    font-size: 22px;
+    color: #0f172a;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.campsite-desc {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.text-danger { color: #dc2626; font-size: 12px; font-weight: 600; }
+.text-success { color: #16a34a; font-size: 12px; font-weight: 600; }
+.text-warning { color: #d97706; font-size: 12px; font-weight: 600; }
+
+.feature-list {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
+    margin-bottom: 20px;
 }
 
-.thoran-check-list li {
+.feature-list li {
     font-size: 13px;
     color: #475569;
     position: relative;
-    padding-left: 20px;
+    padding-left: 18px;
 }
 
-.thoran-check-list li::before {
+.feature-list li::before {
     content: "✓";
     position: absolute;
     left: 0;
@@ -173,222 +210,139 @@ body {
     font-weight: bold;
 }
 
-/* Card Grid for timing & alert */
-.thoran-card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.thoran-info-card {
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 15px;
+.campsite-actions {
     display: flex;
     gap: 12px;
-    align-items: flex-start;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
-.thoran-info-card i {
-    font-size: 18px;
-    color: #0284c7;
-    margin-top: 2px;
-}
-
-.thoran-info-card h3 {
-    font-size: 14px;
-    color: #0f172a;
-    margin-bottom: 4px;
-}
-
-.thoran-info-card p {
-    font-size: 12px;
-    color: #64748b;
-}
-
-.alert-card {
-    border-left: 4px solid #dc2626;
-}
-
-.alert-card i {
-    color: #dc2626;
-}
-
-.highlight-text {
-    color: #dc2626 !important;
-    font-weight: 600;
-    font-size: 11px !important;
-}
-
-/* Activities Badges */
-.thoran-badge-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.activity-badge {
-    background: #f1f5f9;
-    color: #334155;
-    padding: 6px 12px;
-    border-radius: 6px;
-    font-size: 12px;
-    font-weight: 500;
-    border: 1px solid #e2e8f0;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.activity-badge i {
-    color: #0284c7;
-    font-size: 11px;
-}
-
-/* Sidebar Booking Widget */
-.thoran-booking-widget {
+.btn-outline {
+    flex: 1;
+    text-align: center;
     background: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
-}
-
-.thoran-booking-widget h3 {
-    font-size: 18px;
-    color: #0f172a;
-    margin-bottom: 4px;
-}
-
-.thoran-booking-widget p {
-    font-size: 12px;
-    color: #64748b;
-    margin-bottom: 15px;
-}
-
-.form-group {
-    margin-bottom: 12px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 12px;
-    font-weight: 600;
-    color: #334155;
-    margin-bottom: 4px;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 9px 12px;
-    border: 1px solid #cbd5e1;
+    color: #0284c7;
+    border: 1px solid #0284c7;
+    padding: 10px;
     border-radius: 6px;
     font-size: 13px;
-    outline: none;
-    transition: border-color 0.2s;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
 }
 
-.form-group input:focus {
-    border-color: #0284c7;
+.btn-outline:hover {
+    background: #f0f9ff;
 }
 
-.thoran-whatsapp-btn {
-    width: 100%;
+.btn-whatsapp {
+    flex: 1;
     background: #25d366;
     color: #ffffff;
     border: none;
     padding: 10px;
     border-radius: 6px;
-    font-weight: 600;
     font-size: 13px;
+    font-weight: 600;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
     transition: background 0.2s;
-    margin-top: 15px;
 }
 
-.thoran-whatsapp-btn:hover {
+.btn-whatsapp:hover {
     background: #20ba5a;
 }
 
-.direct-call-box {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 12px;
-    color: #64748b;
+/* Image Column Grid */
+.campsite-image-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.direct-call-box a {
-    display: block;
-    color: #0284c7;
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: 2px;
+.main-img-wrap img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-/* Gallery Preview */
-.thoran-gallery-preview {
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-}
-
-.thoran-gallery-preview h3 {
-    font-size: 16px;
-    color: #0f172a;
-    margin-bottom: 12px;
-}
-
-.thoran-img-grid {
+.sub-img-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 8px;
 }
 
-.thoran-img-grid img {
+.sub-img-grid img {
     width: 100%;
-    height: 75px;
+    height: 65px;
     object-fit: cover;
     border-radius: 6px;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s;
 }
 
-.thoran-img-grid img:hover {
+.sub-img-grid img:hover {
     transform: scale(1.03);
 }
 
-/* Footer */
-.thoran-footer {
-    text-align: center;
-    padding: 20px;
+/* Footer Section */
+.camp-footer {
     background: #0f172a;
     color: #94a3b8;
-    font-size: 12px;
-    margin-top: 40px;
+    padding: 40px 20px 20px 20px;
+    margin-top: 60px;
 }
 
-/* Responsive Breakpoints */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.footer-col h3 {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-col p {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 6px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* Responsive Media Queries */
 @media (max-width: 900px) {
-    .thoran-main-container {
+    .campsite-grid-layout {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 500px) {
-    .thoran-card-grid {
-        grid-template-columns: 1fr;
+    .campsite-card-box {
+        padding: 15px;
     }
-    .thoran-img-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .campsite-actions {
+        flex-direction: column;
+    }
+    .meta-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
     }
 }
